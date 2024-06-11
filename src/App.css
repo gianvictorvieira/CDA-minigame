@@ -2,37 +2,212 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  align-items: center;
+  background-color: #b4b4b4;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: #555;
+  border: 1px solid #ffd700;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #3d3d3d;
+  color: #fff;
+  height: 30vh;
+  margin-top: 50px;
+  width: 30vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card h1 {
+  font-size: 25px;
+}
+
+.card-home {
+  align-items: center;
+  background-color: #555;
+  border: 1px solid #ffd700;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #3d3d3d;
+  color: #fff;
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  margin-top: 50px;
+  width: 30vw;
+}
+
+.dados-home button,
+.game-over-buttons button {
+  background-color: #a9a9a9;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #ffd700;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+  padding: 10px 20px;
+}
+
+.dados-home button:hover,
+.game-over-buttons button:hover {
+  background-color: #ffd700;
+  color: #fff;
+}
+
+.dados-home h1 {
+  font-size: 25px;
+}
+
+.game-info {
+  color: #fff;
+}
+
+.game-over-screen {
+  background-color: #555;
+  border: 1px solid #ffd700;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #3d3d3d;
+  color: #fff;
+  height: 30vh;
+  margin-top: 50px;
+  padding-top: 25px;
+  width: 30vw;
+}
+
+.game-over-screen h2 {
+  font-size: 25px;
+}
+
+.input-display,
+.sequence-letter {
+  align-items: center;
+  background-color: #555;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 1em;
+  justify-content: center;
+  margin: 0 1px;
+  padding: 4px;
+  width: 35px;
+}
+
+.game-over-buttons button,
+.input-display.correct,
+.input-display.incorrect {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  border: 2px solid;
+}
+
+.game-play {
+  align-items: center;
+  flex-direction: column;
+}
+
+.gameover {
+  align-items: center;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.input-display {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.5em;
+  margin-top: 20px;
+  min-width: 100px;
+  padding: 10px;
+}
+
+.input-display.correct {
+  animation: correctInput 0.3s forwards;
+  border: 2px solid green;
+}
+
+.input-display.incorrect {
+  animation: incorrectInput 0.3s forwards;
+  border: 2px solid red;
+}
+
+.sequence-letter {
+  align-items: center;
+  background-color: #555;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 1em;
+  justify-content: center;
+  margin: 0 1px;
+  padding: 4px;
+  width: 35px;
+}
+
+.sequence-letter.error {
+  animation: blink-red 0.5s;
+}
+
+.sequence-letter.highlight {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.sequence-letter.typed {
+  background-color: #ffd700; /* Cor de destaque para caracteres digitados corretamente */
+  color: #000; /* Cor do texto para caracteres digitados corretamente */
+}
+
+.time-bar {
+  background-color: #ffd700;
+  height: 100%;
+  transition: width 3s linear;
+}
+
+.time-bar-container {
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 8vw;
+  overflow: hidden;
+  width: 50%;
+}
+
+@keyframes blink-red {
+  0%,
+  100% {
+    background-color: #ff0;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    background-color: red;
+  }
+}
+
+@keyframes correctInput {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: lightgreen;
+  }
+}
+
+@keyframes incorrectInput {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: lightcoral;
   }
 }
