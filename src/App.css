@@ -183,6 +183,10 @@
   overflow: hidden;
   width: 50%;
 }
+.svg-container {
+width: 100px;
+margin-left: 25px;
+}
 
 @keyframes blink-red {
   0%,
