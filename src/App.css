@@ -15,7 +15,7 @@
 
 .card {
   background-color: #555;
-  border: 1px solid #ffd700;
+  border: 1px solid #FFC046;
   border-radius: 15px;
   box-shadow: 3px 3px 3px #3d3d3d;
   color: #fff;
@@ -31,7 +31,7 @@
 .card-home {
   align-items: center;
   background-color: #555;
-  border: 1px solid #ffd700;
+  border: 1px solid #FFC046;
   border-radius: 15px;
   box-shadow: 3px 3px 3px #3d3d3d;
   color: #fff;
@@ -47,7 +47,7 @@
   background-color: #a9a9a9;
   border: 1px solid black;
   border-radius: 5px;
-  color: #ffd700;
+  color: #FFC046;
   cursor: pointer;
   font-size: 1em;
   margin: 5px;
@@ -56,7 +56,7 @@
 
 .dados-home button:hover,
 .game-over-buttons button:hover {
-  background-color: #ffd700;
+  background-color: #FFC046;
   color: #fff;
 }
 
@@ -70,7 +70,7 @@
 
 .game-over-screen {
   background-color: #555;
-  border: 1px solid #ffd700;
+  border: 1px solid #FFC046;
   border-radius: 15px;
   box-shadow: 3px 3px 3px #3d3d3d;
   color: #fff;
@@ -158,17 +158,21 @@
 }
 
 .sequence-letter.highlight {
-  background-color: #ffd700;
+  background-color: #FFC046;
   color: #000;
+  border: 2px solid black;
 }
 
 .sequence-letter.typed {
-  background-color: #ffd700; /* Cor de destaque para caracteres digitados corretamente */
-  color: #000; /* Cor do texto para caracteres digitados corretamente */
+  background-color: #FFC046;
+  /* Cor de destaque para caracteres digitados corretamente */
+  color: #000;
+  /* Cor do texto para caracteres digitados corretamente */
+  border: 2px solid black;
 }
 
 .time-bar {
-  background-color: #ffd700;
+  background-color: #FFC046;
   height: 100%;
   transition: width 3s linear;
 }
@@ -183,16 +187,19 @@
   overflow: hidden;
   width: 50%;
 }
+
 .svg-container {
-width: 100px;
-margin-left: 25px;
+  margin-left: 10px;
+  width: 100px;
 }
 
 @keyframes blink-red {
+
   0%,
   100% {
-    background-color: #ff0;
+    background-color: #FFC046;
   }
+
   50% {
     background-color: red;
   }
@@ -202,6 +209,7 @@ margin-left: 25px;
   0% {
     background-color: white;
   }
+
   100% {
     background-color: lightgreen;
   }
@@ -211,6 +219,7 @@ margin-left: 25px;
   0% {
     background-color: white;
   }
+
   100% {
     background-color: lightcoral;
   }
