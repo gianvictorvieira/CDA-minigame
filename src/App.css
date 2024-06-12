@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 .App {
   text-align: center;
 }
 
 .App-header {
   align-items: center;
-  background-color: #b4b4b4;
+  background-image: url(../public/bg1.png);
   color: white;
   display: flex;
   flex-direction: column;
@@ -14,54 +16,68 @@
 }
 
 .card {
-  background-color: #555;
-  border: 1px solid #FFC046;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../public/bg.jpg);
+  border: 1px solid #f9b036;
   border-radius: 15px;
   box-shadow: 3px 3px 3px #3d3d3d;
   color: #fff;
-  height: 30vh;
+  height: 35vh;
   margin-top: 50px;
   width: 30vw;
 }
 
 .card h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 25px;
+  letter-spacing: 5px;
 }
 
 .card-home {
   align-items: center;
-  background-color: #555;
-  border: 1px solid #FFC046;
+  background-image: url(../public/bg.jpg);
+  border: 1px solid #f9b036;
   border-radius: 15px;
   box-shadow: 3px 3px 3px #3d3d3d;
   color: #fff;
   display: flex;
-  height: 30vh;
+  height: 35vh;
   justify-content: center;
   margin-top: 50px;
   width: 30vw;
+
 }
 
 .dados-home button,
 .game-over-buttons button {
-  background-color: #a9a9a9;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: #FFC046;
+  background-color: #f9b036;
+  border-radius: 50px;
+  color: #000;
   cursor: pointer;
   font-size: 1em;
   margin: 5px;
-  padding: 10px 20px;
+  padding: 5px 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  border:none;
 }
 
 .dados-home button:hover,
 .game-over-buttons button:hover {
-  background-color: #FFC046;
+  background-color: #f9b036;
   color: #fff;
+  border:none;
 }
 
 .dados-home h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 25px;
+  letter-spacing: 5px;
 }
 
 .game-info {
@@ -69,19 +85,25 @@
 }
 
 .game-over-screen {
-  background-color: #555;
-  border: 1px solid #FFC046;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../public/bg.jpg);
+  border: 1px solid #f9b036;
   border-radius: 15px;
   box-shadow: 3px 3px 3px #3d3d3d;
   color: #fff;
-  height: 30vh;
+  height: 35vh;
   margin-top: 50px;
-  padding-top: 25px;
   width: 30vw;
+  justify-content: center;
 }
 
 .game-over-screen h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 25px;
+  letter-spacing: 3px;
 }
 
 .input-display,
@@ -138,6 +160,14 @@
   border: 2px solid red;
 }
 
+.restart-button{
+  margin-left: 14vw;
+  width: 50px;
+  margin-bottom: 5px;
+  background-color: #f9b036;
+  color: #000;
+  border-radius: 50px;
+}
 .sequence-letter {
   align-items: center;
   background-color: #555;
@@ -158,13 +188,13 @@
 }
 
 .sequence-letter.highlight {
-  background-color: #FFC046;
+  background-color: #f9b036;
   color: #000;
   border: 2px solid black;
 }
 
 .sequence-letter.typed {
-  background-color: #FFC046;
+  background-color: #f9b036;
   /* Cor de destaque para caracteres digitados corretamente */
   color: #000;
   /* Cor do texto para caracteres digitados corretamente */
@@ -172,7 +202,7 @@
 }
 
 .time-bar {
-  background-color: #FFC046;
+  background-color: #f9b036;
   height: 100%;
   transition: width 3s linear;
 }
@@ -188,16 +218,16 @@
   width: 50%;
 }
 
-.svg-container {
+.svg-container img {
   margin-left: 10px;
-  width: 100px;
+  width: 150px;
 }
 
 @keyframes blink-red {
 
   0%,
   100% {
-    background-color: #FFC046;
+    background-color: #f9b036;
   }
 
   50% {
