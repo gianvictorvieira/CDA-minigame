@@ -43,7 +43,7 @@ const GameScreen = ({ onStart }) => (
 
 const GameOverScreen = ({ score, onRestart, onQuit }) => (
   <div className="game-over-screen">
-    <h2>Tente Novamente!</h2>
+    <h2>TENTE NOVAMENTE!</h2>
     <p>Pontuação: {score}</p>
     <div className="game-over-buttons">
       <button onClick={onRestart}>Jogar Novamente</button>
