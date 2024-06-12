@@ -164,7 +164,7 @@ const App = () => {
         {!gameStarted && !gameOver && <GameScreen onStart={handleStartGame} />}
         {gameStarted && !gameOver && (
           <div className="card">
-            <h1>Mini Game</h1>
+            <h1>MINI GAME</h1>
             
             <div className="game-info">
               <p>Pontuação: {score}</p>
